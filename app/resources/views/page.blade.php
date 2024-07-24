@@ -30,12 +30,13 @@
     </section>
     <footer class="footer-reseaux">
         <div>
-        <!-- <a class="footer-reseaux__link" href="https://github.com/doko972/ProductManagementCRUD.git" target="_blank" aria-label="Lien vers dépot Github">
-            <img class="footer-reseaux__ico" src="../img/github-svgrepo-com.svg" alt="GitHub"> -->
-            @svg 
-        </a>
-    </div>
-        <p>Doko972</p>
+            <p>Doko972</p>
+            <a class="footer-lnk" href="https://github.com/doko972" target="_blank"
+                aria-label="Lien vers dépot Github">
+                Mon Github: <img class="" src="../img/github-svgrepo-com.svg" alt="GitHub">
+                
+            </a>
+        </div>
     </footer>
 </body>
 
