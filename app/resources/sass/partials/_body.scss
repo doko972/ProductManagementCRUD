@@ -1,5 +1,9 @@
 body {
-    background-color: var(--black);
+    // background-color: var(--grey);
+    background-image: url("../img/productList.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: var(--egg-shell);
     font-family: var(--font-family);
     display: flex;
@@ -29,4 +33,7 @@ h1,
 h2 {
     color: var(--orange);
     text-align: center;
+}
+.section-container{
+    background-color: var(--black);
 }

@@ -18,6 +18,7 @@ class ProductController extends Controller
             'title' => 'Liste des produits',
             'price' => 'Prix',
             'home' => 'Accueil',
+            'add'=> 'Ajouter',
             'description' => 'Description',
             'actions' => 'Actions',
             'modify' => 'Modifier',
@@ -36,6 +37,8 @@ class ProductController extends Controller
         $content = [
             'name' => 'Nom:',
             'price' => 'Prix:',
+            'title' => 'Liste des produits',
+            'home' => 'Accueil',
             'description' => 'Description',
             'add'=> 'Ajouter'
         ];

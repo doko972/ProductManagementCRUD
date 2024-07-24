@@ -11,16 +11,32 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-brand"><h3>Liste de Produits</h3></div>
+            <div class="navbar-brand">
+                <h3>{{ $title }}</h3>
+            </div>
             <div class="navbar-menu" id="navbar-menu">
-                <a href="{{ route('product.index') }}"><h3>Accueil</h3></a>
-                <a href="{{ route('product.create') }}"><h3>Ajouter</h3></a>
+                <a href="{{ route('product.index') }}">
+                    <h3>{{ $home }}</h3>
+                </a>
+                <a href="{{ route('product.create') }}">
+                    <h3>{{ $add }}</h3>
+                </a>
             </div>
         </nav>
     </header>
-
-    @section('content')
-    @show 
+    <section class="section-container">
+        @section('content')
+        @show 
+    </section>
+    <footer class="footer-reseaux">
+        <div>
+        <!-- <a class="footer-reseaux__link" href="https://github.com/doko972/ProductManagementCRUD.git" target="_blank" aria-label="Lien vers dépot Github">
+            <img class="footer-reseaux__ico" src="../img/github-svgrepo-com.svg" alt="GitHub"> -->
+            @svg 
+        </a>
+    </div>
+        <p>Doko972</p>
+    </footer>
 </body>
 
 </html>
