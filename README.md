@@ -36,6 +36,11 @@ DB_PASSWORD=laravel //database password
 #Create a new database "laravel"
 #import sql file "laravel.sql" present in this project
 
+#install sass, run :
+
+- npm install --save-dev sass
+
+
 
 #run vite with : npm run dev
 
