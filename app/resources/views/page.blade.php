@@ -12,14 +12,14 @@
     <header>
         <nav class="navbar">
             <div class="navbar-brand">
-                <h3>{{ $title }}</h3>
+                <h3>Liste des produits</h3>
             </div>
             <div class="navbar-menu" id="navbar-menu">
                 <a href="{{ route('product.index') }}">
-                    <h3>{{ $home }}</h3>
+                    <h3>Accueil</h3>
                 </a>
                 <a href="{{ route('product.create') }}">
-                    <h3>{{ $add }}</h3>
+                    <h3>Ajouter</h3>
                 </a>
             </div>
         </nav>
