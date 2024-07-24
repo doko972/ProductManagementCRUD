@@ -7,19 +7,19 @@
 <table>
     <thead>
         <tr class="table-cl">
-            <td>Nom</td>
-            <td>Prix</td>
-            <td>Description</td>
-            <td>Actions</td>
+            <td class="td-alg">Nom</td>
+            <td class="td-alg">Prix</td>
+            <td class="td-alg">Description</td>
+            <td class="td-alg">Actions</td>
         </tr>
     </thead>
     <tbody>
         @foreach ($products as $product)
-            <tr>
-                <td>{{ $product->name }}</td>
-                <td>{{ $product->price }} €uros</td>
-                <td>{{ $product->description }}</td>
-                <td>
+            <tr >
+                <td class="td-alg">{{ $product->name }}</td>
+                <td class="td-alg">{{ $product->price }}  €uros</td>
+                <td class="td-alg">{{ $product->description }}</td>
+                <td class="td-alg">
                     <form action="{{ route('product.destroy', $product->id) }}" method="POST" style="display:inline;">
                         @csrf
                         @method('DELETE')
