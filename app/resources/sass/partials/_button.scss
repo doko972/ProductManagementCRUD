@@ -1,0 +1,16 @@
+button{
+    border-color: var(--brown);
+    border-radius: .5rem;
+    background-color: var(--egg-shell);
+    padding: .5rem 1rem;
+    min-width: 8rem;
+}
+button:focus,
+button:hover{
+    border-color: var(--egg-shell);
+    background-color: var(--orange);
+}
+
+.margin-btn{
+    margin:1rem;
+}

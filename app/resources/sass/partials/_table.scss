@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table-cl{
+    background-color: var(--brown);
+}
+td, th {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+.td-alg{
+    text-align: center;
+    width: 25%;
+}
+tr,
+td{
+    border: var(--orange) 3px solid;
+}
