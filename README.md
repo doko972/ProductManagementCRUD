@@ -10,7 +10,7 @@ https://wampserver.aviatechno.net/
 (C:\wamp64\www)
 
 #Install Laravel environnement, run :
-
+(before command: cd/app)
 - php artisan
 
 #Install Composer :  

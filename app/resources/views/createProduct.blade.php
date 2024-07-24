@@ -8,20 +8,20 @@
     @csrf
     <table>
         <tr>
-            <td><label for="name">Nom:</label></td>
+            <td><label for="name">{{ $name }}</label></td>
             <td><input type="text" name="name" id="name" required></td>
         </tr>
         <tr>
-            <td><label for="price">Prix :</label></td>
+            <td><label for="price">{{ $price }}</label></td>
             <td><input type="text" name="price" id="price" required></td>
         </tr>
         <tr>
-            <td><label for="description">Description :</label></td>
+            <td><label for="description">{{ $description}}</label></td>
             <td><input type="text" name="description" id="description" required></td>
         </tr>
         <tr>
             <td colspan="2" style="text-align: center;">
-                <button type="submit">Ajouter</button>
+                <button type="submit">{{ $add }}</button>
             </td>
         </tr>
     </table>

@@ -14,7 +14,15 @@ class ProductController extends Controller
     public function index()
     {
         $content = [
-            'title' => 'Liste d\'articles',
+            'name' => 'Nom',
+            'title' => 'Liste des produits',
+            'price' => 'Prix',
+            'home' => 'Accueil',
+            'description' => 'Description',
+            'actions' => 'Actions',
+            'modify' => 'Modifier',
+            'delete' => 'Supprimer',
+            'addproduct' => 'Ajouter un produit',
             'products' => Product::all()
         ];
         return view('productList', $content);
@@ -25,7 +33,13 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('createProduct');
+        $content = [
+            'name' => 'Nom:',
+            'price' => 'Prix:',
+            'description' => 'Description',
+            'add'=> 'Ajouter'
+        ];
+        return view('createProduct', $content);
     }
 
     /**
@@ -38,7 +52,7 @@ class ProductController extends Controller
         $product->price = $request->input('price');
         $product->description = $request->input('description');
         $product->save();
-        return Redirect::route('product.index');
+        return Redirect::route('product.index')->with('success', 'Produit ajouté avec succès!');
 
     }
 
@@ -69,7 +83,7 @@ class ProductController extends Controller
         $product->price = $request->input('price');
         $product->description = $request->input('description');
         $product->save();
-        return Redirect::route('product.index');
+        return Redirect::route('product.index')->with('success', 'Produit mis à jour avec succès!');
     }
 
     /**
@@ -79,6 +93,6 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
         $product->delete();
-        return Redirect::route('product.index');
+        return Redirect::route('product.index')->with('success', 'Produit supprimé avec succès!');
     }
 }

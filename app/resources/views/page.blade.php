@@ -11,10 +11,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-brand">Liste de Produits</div>
+            <div class="navbar-brand"><h3>Liste de Produits</h3></div>
             <div class="navbar-menu" id="navbar-menu">
-                <a href="{{ route('product.index') }}">Accueil</a>
-                <a href="{{ route('product.create') }}">Ajouter</a>
+                <a href="{{ route('product.index') }}"><h3>Accueil</h3></a>
+                <a href="{{ route('product.create') }}"><h3>Ajouter</h3></a>
             </div>
         </nav>
     </header>
