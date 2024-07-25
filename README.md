@@ -1,7 +1,7 @@
 # ProductManagementCRUD
 Mini CRUD implementation project using Laravel and Vite framework 
 
-#For this project use wamp - Download : 
+#You need wamp - Download : 
 
 https://wampserver.aviatechno.net/
 
@@ -34,7 +34,7 @@ DB_PASSWORD=laravel //database password
 
 #Create a new user with phpmyadmin
 #Create a new database "laravel"
-#import sql file "laravel.sql" present in this project
+#import sql file "laravel.sql" present into this project
 
 #install sass, run :
 
